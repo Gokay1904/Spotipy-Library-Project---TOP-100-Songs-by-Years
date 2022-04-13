@@ -5,7 +5,8 @@ from spotipy.oauth2 import SpotifyOAuth
 import re
 
 
-#You have to first obtain your client_id and client_secret using spotify api
+#You have to first obtain your client_id , client_secret and authentication token using spotify api
+
 sp = spotipy.Spotify(
     auth_manager=SpotifyOAuth(
         scope="playlist-modify-private",
