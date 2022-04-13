@@ -24,7 +24,7 @@ date = input("Please enter the date you wanted in that format: YYYY-MM-DD \n")
 
 year= date.split("-")[0]
 
-#This is the website where the top100 song is scraped
+#This is the website where the top100 songs are scraped
 response = requests.get(f"https://www.billboard.com/charts/hot-100/{date}/")
 soup = BeautifulSoup(response.text,'html.parser')
 
